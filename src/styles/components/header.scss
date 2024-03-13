@@ -25,4 +25,10 @@
   font-weight: 600;
   color: var(--color-white);
   font-size: 1.25rem;
+  &:hover {
+    background-color: var(--color-white);
+    color: var(--color-black);
+    border-radius: var(--border-round);
+    border: 2px solid var(--color-black);
+  }
 }
