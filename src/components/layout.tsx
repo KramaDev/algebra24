@@ -1,13 +1,10 @@
-import { ReactNode } from "react";
+import Header from "./header";
 
-type Props = {
-  children: ReactNode;
-};
-
-const Layout = ({ children }: Props) => {
+const Layout = () => {
   return (
     <>
-      <div className="layout">{children}</div>
+      <Header />
+      <div className="layout"></div>
     </>
   );
 };

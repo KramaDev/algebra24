@@ -1,14 +1,17 @@
-import Header from "./components/header";
-import Hero from "./components/hero";
+import { Routes, Route, Outlet, Link } from "react-router-dom";
 import Layout from "./components/layout";
+import Home from "./pages/home";
+import NoMatch from "./pages/no-match";
 
 const App = () => {
   return (
     <>
-      <Header />
-      <Layout>
-        <Hero />
-      </Layout>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="*" element={<NoMatch />} />
+        </Route>
+      </Routes>
     </>
   );
 };
