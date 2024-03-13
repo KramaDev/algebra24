@@ -3,16 +3,19 @@
   align-items: center;
   justify-content: center;
   flex-direction: row;
+  margin: auto 20rem;
 
   &__leftbox {
-    padding: 2rem;
-    font-size: 1rem;
+    padding: 1rem;
+    font-size: 2rem;
+    font-weight: 500;
   }
 
   &__rightbox {
     width: 30rem;
     height: 30rem;
-    padding: 2rem;
+    padding: 1rem;
+    background-color: var(--color-black);
     border-radius: 1rem;
   }
 }
