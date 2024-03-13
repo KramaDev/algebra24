@@ -3,10 +3,9 @@ const Hero = () => {
     <>
       <div className="hero">
         <div className="hero__leftbox">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam
-          consequuntur praesentium unde nemo magni laboriosam amet voluptatem
-          similique nihil dicta architecto beatae debitis consequatur eius,
-          aliquid saepe iure placeat dolorem.
+          Here in Algebra you can learn or teach what you love, we have a bunch
+          of courses that you can attend, you can reach out anytime if you have
+          more questions, we will be happy to help anytime!
         </div>
 
         <img
