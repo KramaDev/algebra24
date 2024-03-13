@@ -1,8 +1,4 @@
 const NoMatch = () => {
-  return (
-    <>
-      <div>404 NOT FOUND</div>
-    </>
-  );
+  return <>404 NOT FOUND</>;
 };
 export default NoMatch;

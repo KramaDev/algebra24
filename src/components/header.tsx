@@ -8,22 +8,14 @@ const Header = () => {
           alt="Algebra Logo"
         />
         <div className="header__nav">
-          <a target="_blank" className="link" href="https://www.algebra.hr/">
+          <a className="link" href="">
+            HOME
+          </a>
+          <a className="link" href="/">
             ABOUT
           </a>
-          <a
-            target="_blank"
-            className="link"
-            href="https://www.algebra.hr/karijera-u-algebri/"
-          >
-            CAREER
-          </a>
-          <a
-            target="_blank"
-            className="link"
-            href="https://www.algebra.hr/naslovnica/kontakt/"
-          >
-            REACH OUT
+          <a className="link" href="*">
+            ERROR
           </a>
         </div>
       </header>
