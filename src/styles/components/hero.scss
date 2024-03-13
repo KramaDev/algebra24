@@ -10,7 +10,7 @@
   }
 
   &__rightbox {
-    width: 20rem;
-    height: 20rem;
+    width: 30rem auto;
+    border-radius: var(--border-round);
   }
 }
