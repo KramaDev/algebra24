@@ -26,10 +26,6 @@ type CountryType = {
   };
 };
 
-type CountryResponseType = {
-  data: CountryType[];
-};
-
 //ItemsPerPage
 type OptionType = {
   value: string;
