@@ -1,4 +1,8 @@
 const Home = () => {
-  return <>I am Home</>;
+  return (
+    <>
+      <div>I am Home</div>
+    </>
+  );
 };
 export default Home;

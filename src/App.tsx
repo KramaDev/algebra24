@@ -1,4 +1,4 @@
-import { Routes, Route, Outlet, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Layout from "./components/layout";
 import Home from "./pages/home";
 import NoMatch from "./pages/no-match";
