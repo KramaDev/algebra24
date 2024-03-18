@@ -17,7 +17,18 @@ type ActivePokemonType = {
     front_default: string;
   };
 };
+
 type ActivePokemonResponseType = ActivePokemonType;
+
+type CountryType = {
+  flags: {
+    png: string;
+  };
+};
+
+type CountryResponseType = {
+  data: CountryType[];
+};
 
 //ItemsPerPage
 type OptionType = {
@@ -38,6 +49,7 @@ const Hero = () => {
   const [activePokemon, setActivePokemon] = useState<
     ActivePokemonType | undefined
   >(undefined);
+  const [country, setCountry] = useState<CountryType | undefined>(undefined);
 
   const getData = async (limit: string | undefined) => {
     await fetch(
@@ -67,13 +79,30 @@ const Hero = () => {
       });
   };
 
+  const getCroatiaFacts = async () => {
+    await fetch(`https://restcountries.com/v3.1/name/croatia/`)
+      .then((data) => {
+        return data.json();
+      })
+      .then((res: CountryType[]) => {
+        setCountry(res[0]);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
+
   useEffect(() => {
     getData("10");
+    getCroatiaFacts();
   }, []);
 
   return (
     <>
       <div className="hero">
+        <div>
+          <img src={country?.flags.png} alt="" />
+        </div>
         <h1 className="hero__title">Pokemons</h1>
         <Select
           onChange={(e) => {
