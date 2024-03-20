@@ -1,12 +1,12 @@
+import { Outlet } from "react-router-dom";
 import Header from "./header";
-import Hero from "./hero";
 
 const Layout = () => {
   return (
     <>
       <Header />
       <div className="layout">
-        <Hero />
+        <Outlet />
       </div>
     </>
   );

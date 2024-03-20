@@ -8,14 +8,14 @@ const Header = () => {
           alt="Algebra Logo"
         />
         <div className="header__nav">
-          <a className="link" href="">
+          <a className="link" href="/">
             HOME
           </a>
-          <a className="link" href="/about">
-            ABOUT
+          <a className="link" href="/charmander">
+            POKEMON
           </a>
-          <a className="link" href="/*">
-            ERROR
+          <a className="link" href="/berries">
+            BERRY
           </a>
         </div>
       </header>
