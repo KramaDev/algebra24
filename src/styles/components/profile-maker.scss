@@ -1,0 +1,74 @@
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.card {
+  background-color: var(--color-blue);
+  border-radius: var(--border-round);
+  padding: 1rem 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  &__photo {
+    border-radius: var(--border-circle);
+    box-shadow: 1px 1px 1rem var(--color-black);
+    width: 8rem;
+    height: 8rem;
+    object-fit: contain;
+    margin-bottom: 1rem;
+  }
+
+  &__name {
+    color: var(--color-white);
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+
+  &__tag {
+    margin: 0;
+    padding: 0.25rem 0.75rem;
+    font-weight: 800;
+    background-color: var(--color-white);
+    border-radius: var(--border-round);
+    margin-bottom: 1rem;
+  }
+}
+
+.field {
+  &__input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+
+  &__text {
+    font-weight: 500;
+  }
+
+  &__box {
+    color: var(--color-black);
+  }
+
+  &__btn {
+    background-color: var(--color-blue);
+    color: var(--color-white);
+    font-weight: 600;
+    border: none;
+    border-radius: var(--border-round);
+    padding: 0.5rem 0.75rem;
+    margin-top: 0.5rem;
+    display: block;
+    cursor: pointer;
+    transition: all 250ms ease-in-out;
+
+    &:hover {
+      scale: 1.1;
+    }
+  }
+}

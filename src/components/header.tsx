@@ -17,6 +17,9 @@ const Header = () => {
           <a className="link" href="/berries">
             BERRY
           </a>
+          <a className="link" href="/profile-maker">
+            PROFILE-MAKER
+          </a>
         </div>
       </header>
     </>
