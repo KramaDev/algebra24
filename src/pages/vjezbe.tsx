@@ -12,6 +12,9 @@ const Vjezbe = () => {
         <a className="link link--black" href="/profile-maker">
           PROFILE-MAKER
         </a>
+        <a className="link link--black" href="/datatypes">
+          DATATYPES
+        </a>
       </div>
     </>
   );

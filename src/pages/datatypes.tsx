@@ -1,0 +1,149 @@
+import { useState } from "react";
+
+type ProfileType = {
+  name: string;
+  lastName: string;
+  age: number;
+  gender: boolean;
+  profilePhoto?: string;
+};
+
+type BookType = {
+  title: string;
+  author: string;
+  pages: number;
+  hardCovers: boolean;
+};
+
+const DataTypes = () => {
+  const defaultProfileValues: ProfileType = {
+    name: "Mario",
+    lastName: "Kramaric",
+    age: 23,
+    gender: true,
+    profilePhoto: "https://source.unsplash.com/random/400×400/?portrait",
+  };
+
+  const [name, setName] = useState<string>("");
+  const [names, setNames] = useState<string[]>(["Marin", "Luka"]);
+  const [homeNumber, setHomeNumber] = useState<number>(0);
+  const [grades, setGrades] = useState<number[]>([
+    5, 4, 2, 3, 4, 1, 2, 5, 3, 1, 2, 4, 2,
+  ]);
+  const [profile, setProfile] = useState<ProfileType>(defaultProfileValues);
+  const [books, setBooks] = useState<BookType[]>([]);
+  const [wc, setWc] = useState<boolean>(false);
+
+  return (
+    <>
+      <div>
+        <h1>String</h1>
+        <div>{name ? name : "Name not found!"}</div>
+        <button
+          onClick={() => {
+            setName("Mario");
+          }}
+        >
+          Change Name
+        </button>
+        <hr />
+        <h1>String Array</h1>
+        <div>
+          {names.length === 0
+            ? "No Names found!"
+            : names.map((name, index) => {
+                return <div key={index}>{name}</div>;
+              })}
+        </div>
+        <button
+          onClick={() => {
+            const newState = [...names, "Mario", "Ivan", "Gabriel"];
+            setNames(newState);
+          }}
+        >
+          Add Names
+        </button>
+        <hr />
+        <h1>Number</h1>
+        <div>{homeNumber > 0 ? homeNumber : "Home Number not found!"}</div>
+        <button
+          onClick={() => {
+            setHomeNumber(81);
+          }}
+        >
+          Change Home Number
+        </button>
+        <hr />
+        <h1>Number Array</h1>
+        <div>
+          {grades.length === 0
+            ? "No grades found"
+            : grades.map((grade, index) => {
+                return <div key={index}>{grade > 0 && grade < 6 && grade}</div>;
+              })}
+        </div>
+        <button
+          onClick={() => {
+            let newState: number[] = [];
+
+            grades.forEach((grade) => {
+              if (grade > 1) {
+                newState.push(grade);
+              }
+              setGrades(newState);
+            });
+          }}
+        >
+          Delete 1 Grades
+        </button>
+
+        <hr />
+        <h1>Object</h1>
+        <div>
+          {profile.profilePhoto ? (
+            <img width={30} src={profile.profilePhoto} alt="" />
+          ) : undefined}
+          <p>
+            {profile.name} {profile.lastName} , {profile.age}
+          </p>
+          <p> Gender: {profile.gender ? "♂️" : "♀️"}</p>
+          <button
+            onClick={() => {
+              const newState: ProfileType = {
+                ...profile,
+                gender: !profile.gender,
+              };
+              setProfile(newState);
+            }}
+          >
+            Change gender
+          </button>
+        </div>
+        <hr />
+        <h1>Object Array</h1>
+        <div>
+          {books.length === 0
+            ? "No Books in Library"
+            : books.map((book) => {
+                return (
+                  <>
+                    <div key={book.title}>
+                      {book.title}, {book.author}
+                      <div>Pages: {book.pages}</div>
+                      <div>Hard Covers: {book.hardCovers ? "Yes" : "No"}</div>
+                    </div>
+                  </>
+                );
+              })}
+        </div>
+        <hr />
+        <h1>Boolean</h1>
+        <div>
+          <div>{wc ? "Public WC" : "Private WC"}</div>
+        </div>
+        <hr />
+      </div>
+    </>
+  );
+};
+export default DataTypes;
