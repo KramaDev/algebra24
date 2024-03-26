@@ -11,14 +11,8 @@ const Header = () => {
           <a className="link" href="/">
             HOME
           </a>
-          <a className="link" href="/charmander">
-            POKEMON
-          </a>
-          <a className="link" href="/berries">
-            BERRY
-          </a>
-          <a className="link" href="/profile-maker">
-            PROFILE-MAKER
+          <a className="link" href="/vjezbe">
+            VJEZBE
           </a>
         </div>
       </header>
