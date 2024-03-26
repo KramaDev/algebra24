@@ -34,6 +34,14 @@ const DataTypes = () => {
   const [books, setBooks] = useState<BookType[]>([]);
   const [wc, setWc] = useState<boolean>(false);
 
+  const addBook = () => {
+    const newState: BookType[] = [
+      { title: "Petar Pan", author: "No clue", pages: 123, hardCovers: true },
+    ];
+
+    setBooks(newState);
+  };
+
   return (
     <>
       <div>
@@ -136,11 +144,19 @@ const DataTypes = () => {
                 );
               })}
         </div>
+        <button onClick={addBook}>Add Book</button>
         <hr />
         <h1>Boolean</h1>
         <div>
           <div>{wc ? "Public WC" : "Private WC"}</div>
         </div>
+        <button
+          onClick={() => {
+            setWc(!wc);
+          }}
+        >
+          Public/Private
+        </button>
         <hr />
       </div>
     </>
