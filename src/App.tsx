@@ -7,6 +7,7 @@ import Charmander from "./pages/charmander";
 import ProfileMaker from "./pages/profile-maker";
 import Vjezbe from "./pages/vjezbe";
 import DataTypes from "./pages/datatypes";
+import Gallery from "./pages/gallery";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="berries" element={<Berries />} />
+          <Route path="gallery" element={<Gallery />} />
           <Route path="charmander" element={<Charmander />} />
           <Route path="profile-maker" element={<ProfileMaker />} />
           <Route path="datatypes" element={<DataTypes />} />

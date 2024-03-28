@@ -2,7 +2,10 @@ const Vjezbe = () => {
   return (
     <>
       <h1>POPIS VJEZBI</h1>
-      <div>
+      <div
+        className="sort
+      "
+      >
         <a className="link link--black" href="/charmander">
           POKEMON
         </a>
@@ -14,6 +17,9 @@ const Vjezbe = () => {
         </a>
         <a className="link link--black" href="/datatypes">
           DATATYPES
+        </a>
+        <a className="link link--black" href="/gallery">
+          GALLERY
         </a>
       </div>
     </>

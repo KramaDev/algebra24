@@ -18,8 +18,18 @@ body {
   margin: 0;
 }
 
+.sort {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
 //IMPORTS
 //COMPONENTS A-Z
+@import "./components/gallery.scss";
+@import "./components/grid.scss";
 @import "./components/header.scss";
 @import "./components/hero.scss";
 @import "./components/layout.scss";
