@@ -38,28 +38,37 @@ const DataTypes = () => {
     const newState: BookType[] = [
       { title: "Petar Pan", author: "No clue", pages: 123, hardCovers: true },
     ];
-
     setBooks(newState);
   };
+
+  const excitedNames = names.map((name) => `${name}!`);
+  const firstHighGrade = grades.find((grade) => grade > 3);
+  const deleteLowGrades = () => {
+    let newState: number[] = [];
+    grades.forEach((grade) => {
+      if (grade >= 3) {
+        newState.push(grade);
+      }
+    });
+    setGrades(newState);
+  };
+  const longBooks = books.filter((book) => book.pages > 100);
+  const averageGrade =
+    grades.reduce((acc, curr) => acc + curr, 0) / grades.length;
+  const indexOfFirstM = names.findIndex((name) => name.startsWith("M"));
 
   return (
     <>
       <div>
         <h1>String</h1>
         <div>{name ? name : "Name not found!"}</div>
-        <button
-          onClick={() => {
-            setName("Mario");
-          }}
-        >
-          Change Name
-        </button>
+        <button onClick={() => setName("Mario")}>Change Name</button>
         <hr />
         <h1>String Array</h1>
         <div>
-          {names.length === 0
+          {excitedNames.length === 0
             ? "No Names found!"
-            : names.map((name, index) => {
+            : excitedNames.map((name, index) => {
                 return <div key={index}>{name}</div>;
               })}
         </div>
@@ -74,13 +83,7 @@ const DataTypes = () => {
         <hr />
         <h1>Number</h1>
         <div>{homeNumber > 0 ? homeNumber : "Home Number not found!"}</div>
-        <button
-          onClick={() => {
-            setHomeNumber(81);
-          }}
-        >
-          Change Home Number
-        </button>
+        <button onClick={() => setHomeNumber(81)}>Change Home Number</button>
         <hr />
         <h1>Number Array</h1>
         <div>
@@ -90,21 +93,7 @@ const DataTypes = () => {
                 return <div key={index}>{grade > 0 && grade < 6 && grade}</div>;
               })}
         </div>
-        <button
-          onClick={() => {
-            let newState: number[] = [];
-
-            grades.forEach((grade) => {
-              if (grade > 1) {
-                newState.push(grade);
-              }
-              setGrades(newState);
-            });
-          }}
-        >
-          Delete 1 Grades
-        </button>
-
+        <button onClick={deleteLowGrades}>Delete 1 Grades</button>
         <hr />
         <h1>Object</h1>
         <div>
@@ -150,16 +139,18 @@ const DataTypes = () => {
         <div>
           <div>{wc ? "Public WC" : "Private WC"}</div>
         </div>
-        <button
-          onClick={() => {
-            setWc(!wc);
-          }}
-        >
-          Public/Private
-        </button>
+        <button onClick={() => setWc(!wc)}>Public/Private</button>
         <hr />
+      </div>
+      <div>
+        <h2>Results of Applied Functions:</h2>
+        <p>First high grade: {firstHighGrade || "None found"}</p>
+        <p>Long books: {longBooks.length}</p>
+        <p>Average grade: {averageGrade}</p>
+        <p>Index of the first name starting with 'M': {indexOfFirstM}</p>
       </div>
     </>
   );
 };
+
 export default DataTypes;
