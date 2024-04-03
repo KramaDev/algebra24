@@ -8,6 +8,7 @@ import ProfileMaker from "./pages/profile-maker";
 import Vjezbe from "./pages/vjezbe";
 import DataTypes from "./pages/datatypes";
 import Gallery from "./pages/gallery";
+import Stuff from "./pages/stuff";
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
           <Route path="profile-maker" element={<ProfileMaker />} />
           <Route path="datatypes" element={<DataTypes />} />
           <Route path="vjezbe" element={<Vjezbe />} />
+          <Route path="stuff" element={<Stuff />} />
           <Route path="*" element={<NoMatch />} />
         </Route>
       </Routes>

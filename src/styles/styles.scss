@@ -4,6 +4,8 @@
   --color-gray: #414141;
 
   --color-blue: #5a5af1;
+  --color-red: #b33939;
+  --color-orange: #be653b;
 
   --border-round: 1rem;
   --border-circle: 1600rem;
@@ -31,6 +33,7 @@ body {
 @import "./components/gallery.scss";
 @import "./components/grid.scss";
 @import "./components/header.scss";
+@import "./components/home.scss";
 @import "./components/hero.scss";
 @import "./components/layout.scss";
 @import "./components/profile-maker.scss";

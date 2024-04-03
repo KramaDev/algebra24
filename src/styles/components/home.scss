@@ -1,0 +1,116 @@
+.article {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: var(--color-black);
+  margin: 2rem;
+
+  @media only screen and (max-width: 720px) {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    gap: 2rem;
+
+    background-color: var(--color-white);
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    padding: 1rem;
+    gap: 2rem;
+
+    @media only screen and (max-width: 720px) {
+      flex-direction: column;
+    }
+
+    & .kartica {
+      background-color: var(--color-red);
+      color: var(--color-white);
+      border-radius: var(--border-round);
+      padding: 1rem;
+      width: 20rem;
+
+      &__naslov {
+        text-align: center;
+      }
+      &__tekst {
+        text-align: center;
+      }
+      &__btn {
+        width: 100%;
+        color: var(--color-white);
+        padding: 0.25rem;
+        font-size: 1rem;
+        border: none;
+        border-radius: var(--border-round);
+        background-color: var(--color-orange);
+        transition: all 250ms ease-in-out;
+        cursor: pointer;
+        &:hover {
+          color: var(--color-black);
+          background-color: var(--color-white);
+          font-weight: 600;
+        }
+      }
+    }
+  }
+
+  .user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 25rem;
+    background-color: var(--color-red);
+    color: var(--color-white);
+    padding: 2rem;
+
+    border-radius: 0 1rem 1rem 0;
+
+    @media only screen and (max-width: 720px) {
+      border-radius: var(--border-round);
+    }
+
+    &__info {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    &__image {
+      border-radius: var(--border-circle);
+      background-color: var(--color-white);
+      object-fit: cover;
+      padding: 0.25rem;
+      box-shadow: 1px 1px 1rem var(--color-black);
+      width: 10rem;
+      height: 10rem;
+      transition: all 250ms ease-in-out;
+      &:hover {
+        scale: 1.1;
+      }
+    }
+
+    &__id {
+      margin: 0;
+      margin-top: 1rem;
+    }
+    &__bio {
+      margin: 0;
+      margin-bottom: 1rem;
+    }
+    &__links {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  }
+}

@@ -6,6 +6,7 @@ const ProfileMaker = () => {
 
   return (
     <>
+      <h1>Profile Maker</h1>
       <div className="section">
         <div className="card">
           <img
