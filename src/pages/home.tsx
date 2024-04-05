@@ -135,6 +135,10 @@ const photodata: PhotoType[] = [
 ];
 
 const Home = () => {
+  const handleButton = () => {
+    window.open("https://hr.linkedin.com/in/mario-kramarich", "_blank");
+  };
+
   return (
     <>
       <div className="article">
@@ -172,7 +176,9 @@ const Home = () => {
                   </h2>
                   <hr />
                   <p className="kartica__tekst">{item.tekst}</p>
-                  <button className="kartica__btn">MORE</button>
+                  <button onClick={handleButton} className="kartica__btn">
+                    MORE
+                  </button>
                 </div>
               </>
             );
@@ -196,6 +202,10 @@ const Home = () => {
             );
           })}
         </div>
+      </div>
+      <div className="article article--center">
+        TABS WILL GO HERE
+        {/* TABS WEBSITE https://blog.logrocket.com/how-to-build-tab-component-react/ */}
       </div>
     </>
   );
