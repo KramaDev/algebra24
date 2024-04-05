@@ -48,4 +48,12 @@
       color: var(--color-gray);
     }
   }
+
+  &--purple {
+    color: var(--color-white);
+    &:hover {
+      background-color: var(--color-purple);
+      color: var(--color-white);
+    }
+  }
 }

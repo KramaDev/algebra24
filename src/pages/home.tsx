@@ -15,6 +15,11 @@ type PerosnalDataType = {
   links: LinkType[];
 };
 
+type PhotoType = {
+  href: string;
+  alt: string;
+};
+
 const karticadata: KarticaType[] = [
   {
     naslov: "Frontend Developer",
@@ -78,6 +83,57 @@ const profiledata: PerosnalDataType = {
   ],
 };
 
+const photodata: PhotoType[] = [
+  {
+    href: "https://source.unsplash.com/random/1000x1000/?fruit",
+    alt: "Photo of Fruit",
+  },
+  {
+    href: "https://source.unsplash.com/random/1000x1000/?car",
+    alt: "Photo of Car",
+  },
+  {
+    href: "https://source.unsplash.com/random/1000x1000/?nature",
+    alt: "Photo of Nature",
+  },
+  {
+    href: "https://source.unsplash.com/random/1000x1000/?sky",
+    alt: "Photo of Sky",
+  },
+  {
+    href: "https://source.unsplash.com/random/1000x1000/?ferrari",
+    alt: "Photo of Ferrari",
+  },
+  {
+    href: "https://source.unsplash.com/random/1000x1000/?portrait",
+    alt: "Photo of Human",
+  },
+  {
+    href: "https://source.unsplash.com/random/1000x1000/?programming",
+    alt: "Photo of Code",
+  },
+  {
+    href: "https://source.unsplash.com/random/1000x1000/?BMW",
+    alt: "Photo of BMW",
+  },
+  {
+    href: "https://source.unsplash.com/random/1000x1000/?road",
+    alt: "Photo of Road",
+  },
+  {
+    href: "https://source.unsplash.com/random/1000x1000/?cat",
+    alt: "Photo of Cat",
+  },
+  {
+    href: "https://source.unsplash.com/random/1000x1000/?drinks",
+    alt: "Photo of Drinks",
+  },
+  {
+    href: "https://source.unsplash.com/random/1000x1000/?banana",
+    alt: "Photo of Banana",
+  },
+];
+
 const Home = () => {
   return (
     <>
@@ -95,7 +151,7 @@ const Home = () => {
                   <a
                     target="_blank"
                     key={link.href}
-                    className="link"
+                    className="link link--purple"
                     href={link.href}
                   >
                     {link.label}
@@ -117,6 +173,24 @@ const Home = () => {
                   <hr />
                   <p className="kartica__tekst">{item.tekst}</p>
                   <button className="kartica__btn">MORE</button>
+                </div>
+              </>
+            );
+          })}
+        </div>
+      </div>
+      <div className="article article--center">
+        <h1 className="article__text">GALERIJA</h1>
+        <div className="gridbox">
+          {photodata.map((photo, index) => {
+            return (
+              <>
+                <div key={index}>
+                  <img
+                    className="gridbox__item"
+                    src={photo.href}
+                    alt={photo.alt}
+                  />
                 </div>
               </>
             );
