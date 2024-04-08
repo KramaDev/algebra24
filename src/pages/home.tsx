@@ -1,3 +1,5 @@
+import Tabs from "../components/TabsComponents/tabs";
+
 type LinkType = {
   href: string;
   label: string;
@@ -203,10 +205,8 @@ const Home = () => {
           })}
         </div>
       </div>
-      <div className="article article--center">
-        TABS WILL GO HERE
-        {/* TABS WEBSITE https://blog.logrocket.com/how-to-build-tab-component-react/ */}
-      </div>
+
+      <Tabs />
     </>
   );
 };
