@@ -9,6 +9,7 @@ import Vjezbe from "./pages/vjezbe";
 import DataTypes from "./pages/datatypes";
 import Gallery from "./pages/gallery";
 import Stuff from "./pages/stuff";
+import Tabss from "./pages/tabss";
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
           <Route path="datatypes" element={<DataTypes />} />
           <Route path="vjezbe" element={<Vjezbe />} />
           <Route path="stuff" element={<Stuff />} />
+          <Route path="tabss" element={<Tabss />} />
           <Route path="*" element={<NoMatch />} />
         </Route>
       </Routes>

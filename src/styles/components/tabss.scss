@@ -1,0 +1,21 @@
+.tabss {
+  display: flex;
+  margin-top: 2rem;
+
+  &__item {
+    padding: 0.5rem 1.5rem;
+    border-bottom: 1px solid var(--color-black);
+
+    transition: all 100ms ease-in-out;
+    cursor: pointer;
+
+    &.active {
+      border-bottom: 3px solid var(--color-blue);
+      border-radius: 0.5rem;
+    }
+  }
+
+  &__content {
+    padding: 1rem;
+  }
+}

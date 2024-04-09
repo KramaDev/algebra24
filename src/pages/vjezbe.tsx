@@ -24,6 +24,9 @@ const Vjezbe = () => {
         <a className="link link--black" href="/stuff">
           GALLERY
         </a>
+        <a className="link link--black" href="/tabss">
+          TABS
+        </a>
       </div>
     </>
   );
