@@ -1,0 +1,31 @@
+.movie {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  &__name {
+    font-size: 2rem;
+    margin-bottom: 0;
+  }
+  &__year {
+    font-size: 1.5rem;
+  }
+  &__genre {
+    display: flex;
+    gap: 2rem;
+    padding: 0.25rem;
+    &__item {
+      background-color: var(--color-orange);
+      color: var(--color-white);
+      font-weight: 800;
+      padding: 0.25rem 0.5rem;
+      border-radius: var(--border-round);
+    }
+  }
+  &__img {
+    width: 20rem;
+    box-shadow: 1px 1px 1rem var(--color-black);
+  }
+}

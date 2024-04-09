@@ -3,6 +3,7 @@ export type MovieType = {
   name: string;
   year: string;
   genre: string[];
+  href: string;
 };
 
 export type TabType = {
