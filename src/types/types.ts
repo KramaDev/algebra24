@@ -10,3 +10,10 @@ export type TabType = {
   id: string;
   label: string;
 };
+
+export type CastType = {
+  id: string;
+  realName: string;
+  castName: string;
+  image: string;
+};
