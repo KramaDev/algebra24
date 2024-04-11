@@ -22,4 +22,7 @@ export type GameType = {
   id: string;
   imgUrl: string;
   name: string;
+  summary: string;
+  steamUrl: string;
+  epicUrl: string;
 };

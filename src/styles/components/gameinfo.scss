@@ -1,0 +1,47 @@
+.game {
+  &__layout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem;
+  }
+  &__img {
+    display: block;
+    width: 100%;
+    height: 30rem;
+    object-fit: contain;
+  }
+  &__name {
+    font-size: 4rem;
+    font-weight: 800;
+  }
+  &__summary {
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 0 10rem;
+  }
+  &__boxbtn {
+    font-size: 2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  &__btn {
+    padding: 0.5rem 1rem;
+    font-size: 2rem;
+    font-weight: 800;
+    margin: 1rem;
+    border: none;
+    background-color: var(--color-green);
+    border-radius: var(--border-round);
+    transition: all 250ms ease-in-out;
+    cursor: pointer;
+    &:hover {
+      scale: 0.95;
+      box-shadow: 1px 1px 1rem var(--color-blue);
+    }
+  }
+}

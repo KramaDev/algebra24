@@ -7,6 +7,7 @@
   --color-red: #b33939;
   --color-orange: #ff793f;
   --color-purple: #706fd3;
+  --color-green: #34ad0f;
 
   --border-round: 1rem;
   --border-circle: 1600rem;
@@ -32,6 +33,7 @@ body {
 //IMPORTS
 //COMPONENTS A-Z
 @import "./components/gallery.scss";
+@import "./components/gameinfo.scss";
 @import "./components/games.scss";
 @import "./components/grid.scss";
 @import "./components/header.scss";

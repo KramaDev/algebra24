@@ -22,9 +22,31 @@ const GameInfo = () => {
     <>
       {data ? (
         <>
-          <div>
-            <img width={500} src={data.imgUrl} alt={data.name} />
-            <h1>{data.name}</h1>
+          <div className="game__layout">
+            <img className="game__img" src={data.imgUrl} alt={data.name} />
+            <h1 className="game__name">{data.name}</h1>
+            <p className="game__summary">{data.summary}</p>
+          </div>
+          <div className="game__boxbtn">
+            <h2>Purchase on:</h2>
+            <div>
+              <button
+                onClick={() => {
+                  window.open(`${data.steamUrl}`, "_blank");
+                }}
+                className="game__btn"
+              >
+                STEAM
+              </button>
+              <button
+                onClick={() => {
+                  window.open(`${data.epicUrl}`, "_blank");
+                }}
+                className="game__btn"
+              >
+                OTHER
+              </button>
+            </div>
           </div>
         </>
       ) : (

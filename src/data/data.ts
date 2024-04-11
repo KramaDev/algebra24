@@ -136,23 +136,39 @@ export const gamesData: GameType[] = [
     imgUrl:
       "https://upload.wikimedia.org/wikipedia/en/a/a5/Grand_Theft_Auto_V.png",
     name: "GTA V",
+    summary:
+      "Grand Theft Auto V is a 2013 action-adventure game developed by Rockstar North and published by Rockstar Games. It is the seventh main entry in the Grand Theft Auto series, following 2008's Grand Theft Auto IV, and the fifteenth instalment overall. Set within the fictional state of San Andreas, based on Southern California, the single-player story follows three protagonists—retired bank robber Michael De Santa, street gangster Franklin Clinton, and drug dealer and gunrunner Trevor Philips—and their attempts to commit heists while under pressure from a corrupt government agency and powerful criminals. The open world design lets players freely roam San Andreas's open countryside and the fictional city of Los Santos, based on Los Angeles.",
+    steamUrl: "https://store.steampowered.com/app/271590/Grand_Theft_Auto_V/",
+    epicUrl: "https://store.epicgames.com/en-US/p/grand-theft-auto-v",
   },
   {
     id: "Baldurs-Gate-3",
     imgUrl:
       "https://image.api.playstation.com/vulcan/ap/rnd/202302/2321/3098481c9164bb5f33069b37e49fba1a572ea3b89971ee7b.jpg",
     name: "Baldur's Gate 3",
+    summary:
+      "Baldur's Gate 3 is a 2023 role-playing video game developed and published by Belgian game developer Larian Studios. The game is the third main installment in the Baldur's Gate series, based on the tabletop fantasy role-playing system of Dungeons & Dragons. A partial version of the game was released in early access format for macOS and Windows in October 2020. It remained in early access until its full release for Windows in August 2023, with versions for PlayStation 5, macOS, and Xbox Series X/S releasing later that year.",
+    steamUrl: "https://store.steampowered.com/app/1086940/Baldurs_Gate_3/",
+    epicUrl: "https://baldursgate3.game/",
   },
   {
     id: "Elden-Ring",
     imgUrl:
       "https://image.api.playstation.com/vulcan/ap/rnd/202108/0410/0Jz6uJLxOK7JOMMfcfHFBi1D.png",
     name: "Elden Ring",
+    summary:
+      "Elden Ring is a 2022 action role-playing game developed by FromSoftware. It was directed by Hidetaka Miyazaki with worldbuilding provided by fantasy writer George R. R. Martin. It was published for PlayStation 4, PlayStation 5, Windows, Xbox One, and Xbox Series X/S on February 25 by FromSoftware in Japan and Bandai Namco Entertainment internationally. Players control a customizable player character who is on a quest to repair the Elden Ring and become the new Elden Lord.",
+    steamUrl: "https://store.steampowered.com/app/1245620/ELDEN_RING/",
+    epicUrl: "https://en.bandainamcoent.eu/elden-ring/elden-ring",
   },
   {
     id: "God-of-War",
     imgUrl:
       "https://image.api.playstation.com/vulcan/img/rnd/202011/1021/X3WIAh63yKhRRiMohLoJMeQu.png",
     name: "God of War",
+    summary:
+      "God of War is a fantasy action-adventure game franchise created by David Jaffe and developed by Santa Monica Studio. It began in 2005 for the PlayStation 2 (PS2) video game console and has become a flagship series for the PlayStation, consisting of nine installments across multiple platforms. Based on ancient mythologies, the series' plot follows Kratos, a Spartan warrior who becomes the God of War and comes into conflict with various mythological pantheons. The earlier games in the series are based on Greek mythology and see Kratos follow a path of vengeance against the Olympian gods; the later games in the series are based on Norse mythology and see Kratos go on a path of redemption while also introducing his son Atreus as a secondary protagonist.",
+    steamUrl: "https://store.steampowered.com/app/1593500/God_of_War/",
+    epicUrl: "https://store.epicgames.com/en-US/p/god-of-war",
   },
 ];
