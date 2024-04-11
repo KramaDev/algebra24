@@ -28,4 +28,21 @@
     width: 20rem;
     box-shadow: 1px 1px 1rem var(--color-black);
   }
+
+  &__actor {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    img {
+      width: 5rem;
+      height: 5rem;
+      object-fit: cover;
+      border-radius: var(--border-circle);
+    }
+  }
+  &__grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

@@ -4,6 +4,7 @@ export type MovieType = {
   year: string;
   genre: string[];
   href: string;
+  cast: CastType[];
 };
 
 export type TabType = {
@@ -12,8 +13,7 @@ export type TabType = {
 };
 
 export type CastType = {
-  id: string;
   realName: string;
-  castName: string;
-  image: string;
+  movieName: string;
+  imageUrl: string;
 };

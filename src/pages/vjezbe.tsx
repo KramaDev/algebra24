@@ -22,10 +22,10 @@ const Vjezbe = () => {
           GALLERY
         </a>
         <a className="link link--black" href="/stuff">
-          GALLERY
+          STUFF
         </a>
         <a className="link link--black" href="/tabss">
-          TABS
+          MOVIES
         </a>
       </div>
     </>
