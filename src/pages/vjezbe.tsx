@@ -27,6 +27,9 @@ const Vjezbe = () => {
         <a className="link link--black" href="/tabss">
           MOVIES
         </a>
+        <a className="link link--black" href="/games">
+          GAMES
+        </a>
       </div>
     </>
   );

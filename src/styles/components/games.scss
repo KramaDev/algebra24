@@ -1,0 +1,29 @@
+.games {
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+  }
+
+  &__card {
+    border: 1px solid var(--color-black);
+    border-radius: var(--border-round);
+    transition: all 100ms ease-in-out;
+    overflow: hidden;
+    cursor: pointer;
+    &:hover {
+      scale: 0.95;
+      box-shadow: 1px 1px 1rem var(--color-black);
+    }
+  }
+  &__img {
+    display: block;
+    width: 100%;
+    height: 15rem;
+    object-fit: contain;
+  }
+
+  &__name {
+    padding: 1rem;
+  }
+}

@@ -1,4 +1,4 @@
-import { MovieType, TabType } from "../types/types";
+import { GameType, MovieType, TabType } from "../types/types";
 
 export const tabData: TabType[] = [
   {
@@ -127,5 +127,32 @@ export const movieData: MovieType[] = [
         realName: "Taika Waititi",
       },
     ],
+  },
+];
+
+export const gamesData: GameType[] = [
+  {
+    id: "GTA-V",
+    imgUrl:
+      "https://upload.wikimedia.org/wikipedia/en/a/a5/Grand_Theft_Auto_V.png",
+    name: "GTA V",
+  },
+  {
+    id: "Baldurs-Gate-3",
+    imgUrl:
+      "https://image.api.playstation.com/vulcan/ap/rnd/202302/2321/3098481c9164bb5f33069b37e49fba1a572ea3b89971ee7b.jpg",
+    name: "Baldur's Gate 3",
+  },
+  {
+    id: "Elden-Ring",
+    imgUrl:
+      "https://image.api.playstation.com/vulcan/ap/rnd/202108/0410/0Jz6uJLxOK7JOMMfcfHFBi1D.png",
+    name: "Elden Ring",
+  },
+  {
+    id: "God-of-War",
+    imgUrl:
+      "https://image.api.playstation.com/vulcan/img/rnd/202011/1021/X3WIAh63yKhRRiMohLoJMeQu.png",
+    name: "God of War",
   },
 ];

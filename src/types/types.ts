@@ -17,3 +17,9 @@ export type CastType = {
   movieName: string;
   imageUrl: string;
 };
+
+export type GameType = {
+  id: string;
+  imgUrl: string;
+  name: string;
+};
