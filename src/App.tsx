@@ -12,6 +12,7 @@ import Stuff from "./pages/stuff";
 import Tabss from "./pages/tabss";
 import Games from "./pages/games";
 import GameInfo from "./pages/gameinfo";
+import Glovo from "./pages/glovo";
 
 const App = () => {
   return (
@@ -26,6 +27,7 @@ const App = () => {
           <Route path="datatypes" element={<DataTypes />} />
           <Route path="vjezbe" element={<Vjezbe />} />
           <Route path="stuff" element={<Stuff />} />
+          <Route path="glovo" element={<Glovo />} />
           <Route path="tabss" element={<Tabss />} />
           <Route path="games">
             <Route index element={<Games />} />

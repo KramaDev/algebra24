@@ -30,6 +30,9 @@ const Vjezbe = () => {
         <a className="link link--black" href="/games">
           GAMES
         </a>
+        <a className="link link--black" href="/glovo">
+          GLOVO
+        </a>
       </div>
     </>
   );
