@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import DatePicker from "react-date-picker";
+import { useForm } from "react-hook-form";
 import TimePicker from "react-time-picker";
 
 type ValuePiece = Date | null;
@@ -9,6 +10,12 @@ type Value = ValuePiece | [ValuePiece, ValuePiece];
 const Glovo = () => {
   const [valueDate, onChangeDate] = useState<Value>(new Date());
   const [value, onChange] = useState<string | null>("10:00");
+
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
 
   useEffect(() => {}, []);
   return (
@@ -71,7 +78,32 @@ const Glovo = () => {
         </div>
       </form>
 
-      <h3>React Hook Form</h3>
+      <h1>React Hook Form</h1>
+      <form onSubmit={handleSubmit((data) => console.log(data))}>
+        <div className="field">
+          <label htmlFor="ime">IME</label>
+          <input className="input" id="ime" {...register("firstName")} />
+        </div>
+        <div className="field">
+          <label htmlFor="prezime">PREZIME</label>
+          <input
+            className="input"
+            id="prezime"
+            {...register("lastName", { required: true })}
+          />
+          {errors.lastName && <p>Last name is required.</p>}
+        </div>
+        <div className="field">
+          <label htmlFor="godiste">GODINE</label>
+          <input
+            className="input"
+            id="godiste"
+            {...register("age", { pattern: /\d+/ })}
+          />
+          {errors.age && <p>Please enter number for age.</p>}
+        </div>
+        <input className="btn" type="submit" />
+      </form>
     </>
   );
 };
