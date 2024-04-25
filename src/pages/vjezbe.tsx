@@ -33,6 +33,9 @@ const Vjezbe = () => {
         <a className="link link--black" href="/glovo">
           GLOVO
         </a>
+        <a className="link link--black" href="/vjezba25042024">
+          VZ FUNKCIJE
+        </a>
       </div>
     </>
   );

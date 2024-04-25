@@ -13,6 +13,7 @@ import Tabss from "./pages/tabss";
 import Games from "./pages/games";
 import GameInfo from "./pages/gameinfo";
 import Glovo from "./pages/glovo";
+import Vjezba25042024 from "./pages/vjezba25042024";
 
 const App = () => {
   return (
@@ -26,6 +27,7 @@ const App = () => {
           <Route path="profile-maker" element={<ProfileMaker />} />
           <Route path="datatypes" element={<DataTypes />} />
           <Route path="vjezbe" element={<Vjezbe />} />
+          <Route path="vjezba25042024" element={<Vjezba25042024 />} />
           <Route path="stuff" element={<Stuff />} />
           <Route path="glovo" element={<Glovo />} />
           <Route path="tabss" element={<Tabss />} />
