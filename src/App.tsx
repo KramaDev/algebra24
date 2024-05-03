@@ -14,6 +14,7 @@ import Games from "./pages/games";
 import GameInfo from "./pages/gameinfo";
 import Glovo from "./pages/glovo";
 import Vjezba25042024 from "./pages/vjezba25042024";
+import Lists from "./pages/lists";
 
 const App = () => {
   return (
@@ -31,6 +32,7 @@ const App = () => {
           <Route path="stuff" element={<Stuff />} />
           <Route path="glovo" element={<Glovo />} />
           <Route path="tabss" element={<Tabss />} />
+          <Route path="lists" element={<Lists />} />
           <Route path="games">
             <Route index element={<Games />} />
             <Route path=":gameId" element={<GameInfo />} />

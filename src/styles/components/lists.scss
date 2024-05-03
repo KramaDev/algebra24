@@ -1,0 +1,42 @@
+.spotify {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 2rem;
+  color: var(--color-white);
+  &__list {
+    width: 20rem;
+    border: 1px solid var(--color-black);
+    padding: 1rem;
+    border-radius: var(--border-round);
+    padding: 0.5rem;
+    background-color: var(--color-blue);
+    &__item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: var(--color-gray);
+      padding: 0.5rem 1rem;
+      border-radius: var(--border-round);
+    }
+  }
+  &__favourites {
+    background-color: var(--color-red);
+    width: 20rem;
+    border: 1px solid var(--color-black);
+    padding: 1rem;
+    border-radius: var(--border-round);
+    padding: 0.5rem;
+    text-align: center;
+  }
+  &__btn {
+    border: none;
+    margin: 0.5rem 0.5rem;
+    background-color: var(--color-blue);
+    padding: 1rem;
+    border-radius: var(--border-round);
+    padding: 0.5rem;
+    color: var(--color-white);
+  }
+}

@@ -36,6 +36,9 @@ const Vjezbe = () => {
         <a className="link link--black" href="/vjezba25042024">
           VZ FUNKCIJE
         </a>
+        <a className="link link--black" href="/lists">
+          LISTS
+        </a>
       </div>
     </>
   );
